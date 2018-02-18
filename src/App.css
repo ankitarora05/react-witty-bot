@@ -15,6 +15,7 @@
 .Chat-window {
   display: block;
   height: 83.8vh;
+  overflow: scroll;
   background: #f5f5f5;
 }
 

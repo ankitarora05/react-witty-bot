@@ -12,10 +12,20 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    if(localStorage.getItem("chatHistory")) {
+      let getMessageHistory = localStorage.getItem("chatHistory");
+      this.setState({
+        messageList: JSON.parse(getMessageHistory)
+      });
+    }
+  }
+
   onNewMessage = (val) => {
     this.setState({
       messageList: [...this.state.messageList, val]
     });
+    localStorage.setItem("chatHistory", JSON.stringify(this.state.messageList));
   }
 
   render() {
@@ -25,7 +35,7 @@ class App extends Component {
           <h1 className="App-title">Chatbot</h1>
         </header>
         <ChatWindow connectedUser={this.state.connectedUser} messageList={this.state.messageList}/>
-        <ChatMessage  onNewMessage={this.onNewMessage}/>
+        <ChatMessage  callbackFromSubmit={this.onNewMessage}/>
       </div>
     );
   }
