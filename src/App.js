@@ -25,7 +25,7 @@ class App extends Component {
           <h1 className="App-title">Chatbot</h1>
         </header>
         <ChatWindow connectedUser={this.state.connectedUser} messageList={this.state.messageList}/>
-        <ChatMessage onNewMessage={this.onNewMessage}/>
+        <ChatMessage  onNewMessage={this.onNewMessage}/>
       </div>
     );
   }

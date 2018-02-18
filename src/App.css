@@ -2,7 +2,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #837ce0;
   color: white;
 }
 
@@ -13,14 +13,90 @@
 }
 
 .Chat-window {
-  border: 2px solid #333;
   display: block;
-  height: 80vh;
+  height: 83.8vh;
+  background: #f5f5f5;
+}
+
+.Chat-window ul.Message-list {
+  display: block;  
+  list-style-type: none;
+  margin: 0;
+  padding: 14px;
+}
+
+.Chat-window ul.Message-list li.left-text {
+  text-align: left;
+}
+
+.Chat-window ul.Message-list li.left-text .bubble {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background: white;
+  max-width: 150px;
+}
+
+.Chat-window ul.Message-list li.right-text {
+  text-align: right;
+}
+.Chat-window ul.Message-list li {
+  margin-bottom: 10px;
+}
+.Chat-window ul.Message-list li.right-text .bubble {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background: #a1d1d2;
+  max-width: 200px;
+  color: #2d2d2d;
+  font-size: small;
+  text-align: left;
+}
+
+.Chat-window ul.Message-list li.left-text .bubble {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background: #c7d853;
+  max-width: 200px;
+  color: #2d2d2d;
+  font-size: small;
+  text-align: left;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
 }
 
 .App-intro {
   font-size: large;
 }
+
+.Chat-message {
+  border: 2px solid #dedede;
+}
+
+.Chat-message .Form-container {
+  display: flex;
+}
+
+.Chat-message .Form-container input[type="text"] {
+  padding: 1em;
+  font-size: medium;
+  flex: 7;
+}
+
+.Chat-message .Form-container button {
+  flex: 1;
+  font-size: medium;
+  cursor: pointer;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
