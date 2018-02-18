@@ -1,6 +1,5 @@
 #chat_bot
 
-We suggest that you begin by typing:
-  1. Clone the repo
-  2. cd react_chat_bot
+  1. Clone the repo https://ankit_arora05@bitbucket.org/ankit_arora05/chat-bot.git \n
+  2. cd chat-bot \n
   3. yarn start (Start the development server)
