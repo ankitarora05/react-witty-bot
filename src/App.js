@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Chatbot</h1>
+          <h1 className="App-title">Witty Bot</h1>
         </header>
         <ChatWindow connectedUser={this.state.connectedUser} messageList={this.state.messageList}/>
         <ChatMessage  callbackFromSubmit={this.onNewMessage}/>

@@ -52,6 +52,7 @@ class ChatMessage extends Component {
         }
 
     };
+    
     render() {
         return (
             <div className="Chat-message">

@@ -19,7 +19,7 @@ class ChatWindow extends Component {
     render() {
         const messageItems = this.props.messageList.map(function (item) {
             return (
-                <li key={item.messageID} className={(item.chatBotName === item.chatBotID ? 'right-text' : 'left-text')}><div className="bubble">{item.message}</div></li>
+                <li key={item.messageID} className={(item.chatBotName === item.chatBotID ? 'right-text' : 'left-text')}><div className={ item.chatBotName === item.chatBotID ? 'human-bubble' : 'bot-bubble' }></div> <div className="bubble">{item.message}</div></li>
             );
         });
         return (
